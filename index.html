@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0c1424">
+<meta name="description" content="ニシダメソッド ワンデイセミナー。2027年1月26日・30日、13:00〜16:30、エッサム神田（Zoom同時配信あり）、参加費無料。">
+<title>ニシダメソッド ワンデイセミナー｜2027年1月開催</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#f2efe8;
+  --bone-deep:#e7e1d6;
+  --ink:#171816;
+  --muted:#625f58;
+  --night:#0c1424;
+  --night-soft:#172136;
+  --on-dark:#f2efe8;
+  --on-dark-muted:#c9c6be;
+  --accent:#1f5c49;
+  --accent-ink:#f2efe8;
+  --margin:clamp(1rem,2.2vw,2rem);
+  --gap:clamp(12px,1.6vw,24px);
+
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+
+  /* 文字5段階: 大見出し / セクション見出し / 小見出し / 本文 / 注記 */
+  --t-xl:clamp(2rem,4.9vw,5.25rem);
+  --t-h2:clamp(1.5rem,6vw,4.5rem);
+  --t-h3:clamp(1.25rem,1.05rem + .9vw,1.875rem);
+  --t-body:clamp(1.0625rem,1rem + .22vw,1.1875rem);
+  --t-note:.875rem;
+
+  --sec-y:clamp(4rem,9vw,9rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--night)}
+body{margin:0;background:var(--bone);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:var(--t-body);line-height:1.8;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%}
+h1,h2,h3,p,dl,dd,figure,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500;text-wrap:balance;word-break:auto-phrase}
+p{text-wrap:pretty;word-break:auto-phrase}
+img{display:block;max-width:100%}
+a{color:inherit}
+.l{display:block}
+.nb{display:inline-block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.on-dark :focus-visible,.fv :focus-visible{outline-color:var(--on-dark)}
+
+.wrap{padding-inline:var(--margin)}
+.g{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+.g>*{grid-column:1/-1;min-width:0}
+.h2{font-size:var(--t-h2);line-height:1.15;letter-spacing:-.01em}
+
+/* ========== 1. ファーストビュー（暗／写真主役） ========== */
+.fv{position:relative;isolation:isolate;display:grid;grid-template-rows:minmax(18rem,1fr) auto;min-height:100svh;background:var(--night);color:var(--on-dark);overflow:hidden}
+.fv__pic{grid-area:1/1;position:relative;z-index:0;display:block;min-height:0}
+.fv__pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:12% 18%;filter:brightness(.5) contrast(1.1)}
+.fv__copy{grid-area:2/1;position:relative;z-index:1;background:var(--night);padding:20px var(--margin) 28px}
+.fv__label{font-size:.8125rem;line-height:1.6;font-weight:500;color:var(--on-dark-muted)}
+.fv__title{margin-top:10px;font-size:var(--t-xl);line-height:1.18;letter-spacing:-.015em;color:var(--on-dark)}
+.fv__title .l{white-space:nowrap}
+.fv__lead{margin-top:14px;max-width:34rem;font-size:1rem;line-height:1.75;color:var(--on-dark)}
+.fv__dates{margin-top:18px;font-family:var(--serif);font-weight:500;font-size:clamp(1.375rem,6.2vw,2.5rem);line-height:1.2;white-space:nowrap}
+.fv__facts{display:flex;flex-wrap:wrap;column-gap:20px;margin-top:6px;font-size:.9375rem;line-height:1.7;font-weight:500;color:var(--on-dark-muted)}
+.fv__facts li{white-space:nowrap}
+.fv__facts li:last-child{color:var(--on-dark)}
+
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:56px;padding:0 24px;background:var(--accent);color:var(--accent-ink);font-family:var(--sans);font-weight:500;font-size:1.0625rem;line-height:1.4;text-decoration:none;border:0;border-radius:0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:transform .2s var(--ease)}
+.btn__ar{display:inline-block;transition:transform .25s var(--ease)}
+@media (hover:hover){.btn:hover .btn__ar{transform:translateX(5px)}}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:3px solid var(--on-dark);outline-offset:4px}
+.fv__cta{margin-top:18px;width:100%}
+
+@media (min-width:900px){
+  .fv{grid-template-rows:1fr;min-height:min(100svh,62rem)}
+  .fv__pic{grid-area:1/1}
+  .fv__pic img{object-position:0% 30%;filter:brightness(.5) contrast(1.1)}
+  /* 写真の暗い領域に、コピーを囲む局所の単色面。画面全体は覆わない */
+  .fv__copy{grid-area:1/1;align-self:end;justify-self:end;width:min(100%,53vw);padding:clamp(28px,3.2vw,48px) var(--margin) clamp(28px,3.2vw,48px) clamp(28px,3.2vw,56px);background:var(--night)}
+  .fv__label{font-size:.9375rem}
+  .fv__title{margin-top:14px;font-size:clamp(2.25rem,4.5vw,4.875rem)}
+  .fv__lead{margin-top:18px;font-size:clamp(1.0625rem,1.35vw,1.25rem)}
+  .fv__dates{margin-top:26px;font-size:clamp(1.625rem,2.6vw,2.75rem)}
+  .fv__facts{margin-top:8px;font-size:1.0625rem}
+  .fv__cta{margin-top:26px;width:auto;min-width:min(100%,25rem)}
+}
+
+/* ========== 2. こんな方に来てほしい（明／文字主役） ========== */
+.fit{padding-block:var(--sec-y);background:var(--bone)}
+.fit__h{font-size:clamp(1.125rem,1rem + .6vw,1.5rem);line-height:1.5;color:var(--muted)}
+.fit__list{margin-top:clamp(28px,4vw,56px);display:grid;gap:clamp(22px,2.6vw,44px)}
+.fit__list li{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.3vw,3.25rem);line-height:1.42;letter-spacing:-.01em;word-break:auto-phrase}
+.fit__list em{font-style:normal;font-weight:600;color:var(--accent)}
+@media (min-width:900px){
+  .fit__h{grid-column:1/4}
+  .fit__list{grid-column:3/-1;margin-top:clamp(40px,5vw,88px)}
+}
+
+/* ========== 3. 半日で体験すること（明／流れ主役） ========== */
+.flow{padding-block:var(--sec-y);background:var(--bone-deep)}
+.flow__lead{margin-top:clamp(18px,2vw,28px);max-width:34rem}
+.flow__rows{margin-top:clamp(40px,6vw,104px)}
+.step{padding-block:clamp(22px,3vw,44px)}
+.step h3{font-size:clamp(2.25rem,7.4vw,6.5rem);line-height:1.08;letter-spacing:-.02em}
+.step p{margin-top:12px;max-width:28rem}
+@media (min-width:900px){
+  .step{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);align-items:end}
+  .step h3{margin:0}
+  .step p{margin:0 0 .6em;max-width:none}
+  .step:nth-child(1) h3{grid-column:1/8}
+  .step:nth-child(1) p{grid-column:8/12}
+  .step:nth-child(2) h3{grid-column:1/8}
+  .step:nth-child(2) p{grid-column:6/12;grid-row:2;margin-top:12px}
+  .step:nth-child(3) h3{grid-column:3/-1}
+  .step:nth-child(3) p{grid-column:3/8;grid-row:2;margin-top:12px}
+}
+
+/* ========== 4. 参加者の声（暗／映像主役） ========== */
+.voices{padding-block:var(--sec-y);background:var(--night);color:var(--on-dark)}
+.voices__lead{margin-top:clamp(16px,1.8vw,24px);max-width:36rem;color:var(--on-dark-muted)}
+.vo{margin-top:clamp(56px,8vw,128px)}
+.vid{position:relative;display:block;width:100%;aspect-ratio:16/9;background:var(--night-soft);overflow:hidden}
+.vid__link{position:absolute;inset:0;display:block;color:var(--on-dark)}
+.vid__link img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid__play{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--bone);display:flex;align-items:center;justify-content:center;transition:transform .2s var(--ease)}
+.vid__play::before{content:"";display:block;margin-left:5px;border-style:solid;border-width:13px 0 13px 21px;border-color:transparent transparent transparent var(--ink)}
+.vid__dur{position:absolute;right:0;bottom:0;padding:5px 12px;background:var(--night);color:var(--on-dark-muted);font-size:var(--t-note);font-weight:500;line-height:1.5;font-variant-numeric:tabular-nums}
+@media (hover:hover){.vid__link:hover img{transform:scale(1.02)}.vid__link:hover .vid__play{transform:scale(1.06)}}
+.vo__name{font-size:var(--t-note);font-weight:500;color:var(--on-dark-muted);line-height:1.6}
+.vo__t h3{margin-top:6px;font-size:var(--t-h3);line-height:1.5;color:var(--on-dark)}
+.vo__b{margin-top:18px;display:grid;gap:14px;color:var(--on-dark-muted)}
+.vo__b b{font-weight:500;color:var(--on-dark)}
+.vo__ext{display:inline-flex;align-items:center;min-height:44px;margin-top:6px;font-size:var(--t-note);color:var(--on-dark-muted)}
+.vo__t{margin-top:20px}
+@media (hover:hover){.vo__ext:hover{color:var(--on-dark)}}
+.vo--main .vo__t h3{font-size:clamp(1.375rem,2.4vw,2.5rem)}
+.voices__note{margin-top:clamp(48px,6vw,96px);max-width:40rem;font-size:var(--t-note);line-height:1.8;color:var(--on-dark-muted)}
+@media (min-width:900px){
+  .vo--main .vo__t{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);margin-top:28px}
+  .vo--main .vo__h{grid-column:1/5}
+  .vo--main .vo__b,.vo--main .vo__ext{grid-column:5/12}
+  .vo--main .vo__b{margin-top:6px}
+  .vo--main .vo__ext{grid-row:2}
+  .vo--a,.vo--b{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap)}
+  .vo--a{margin-top:clamp(96px,11vw,176px)}
+  .vo--a .vid{grid-column:1/9;margin-left:calc(var(--margin) * -1);width:calc(100% + var(--margin))}
+  .vo--a .vo__t{grid-column:9/13;align-self:end;margin-top:0}
+  .vo--b{margin-top:clamp(80px,9vw,144px)}
+  .vo--b .vid{grid-column:5/13;grid-row:1;margin-right:calc(var(--margin) * -1);width:calc(100% + var(--margin))}
+  .vo--b .vo__t{grid-column:1/5;grid-row:1;align-self:start;margin-top:0}
+  .vo--a .vo__t h3,.vo--b .vo__t h3{font-size:clamp(1.25rem,1.7vw,1.75rem)}
+}
+
+/* ========== 5. 講師紹介（明／写真主役） ========== */
+.teacher{background:var(--bone);display:grid}
+.teacher__fig{position:relative;aspect-ratio:4/5;background:var(--bone-deep)}
+.teacher__fig img{width:100%;height:100%;object-fit:cover;object-position:26% 28%}
+.teacher__text{padding:clamp(32px,6vw,56px) var(--margin) var(--sec-y)}
+.teacher__text h2{font-size:var(--t-h2);line-height:1.15}
+.teacher__role{margin-top:14px;font-family:var(--serif);font-weight:500;font-size:var(--t-h3);line-height:1.5;color:var(--accent)}
+.career{margin-top:clamp(22px,3vw,36px);display:grid;gap:12px}
+@media (min-width:900px){
+  .teacher{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gap);min-height:clamp(620px,56vw,860px)}
+  .teacher__fig{grid-column:1/8;aspect-ratio:auto;height:100%}
+  .teacher__fig img{object-position:30% 22%}
+  .teacher__text{grid-column:8/13;align-self:end;padding:var(--sec-y) var(--margin) clamp(56px,7vw,112px) 0}
+  .teacher__text h2{font-size:clamp(1.875rem,3.6vw,3.5rem)}
+}
+
+/* ========== 6. 申込み（暗／日付主役） ========== */
+.apply{padding-block:var(--sec-y);background:var(--night);color:var(--on-dark)}
+.outline{margin-top:clamp(24px,3vw,40px);display:grid;gap:8px 32px;grid-template-columns:minmax(0,1fr)}
+.outline div{display:flex;flex-wrap:wrap;column-gap:16px;align-items:baseline}
+.outline dt{min-width:4.5em;font-size:.9375rem;color:var(--on-dark-muted)}
+.outline dd{font-weight:500}
+.days{margin-top:clamp(32px,5vw,72px);display:grid;gap:12px}
+.day{display:grid;grid-template-columns:minmax(0,1fr);background:var(--night-soft);color:var(--on-dark);text-decoration:none}
+.day__main{padding:clamp(20px,3vw,40px) clamp(16px,3vw,40px)}
+.day__d{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(2.25rem,8vw,6rem);line-height:1.05;letter-spacing:-.02em;white-space:nowrap}
+.day__t{display:block;margin-top:8px;font-size:.9375rem;color:var(--on-dark-muted)}
+.day__go{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:0 clamp(16px,3vw,40px);background:var(--accent);color:var(--accent-ink);font-weight:500;font-size:1.0625rem;line-height:1.4;transition:transform .2s var(--ease)}
+.day__ar{display:inline-block;transition:transform .25s var(--ease)}
+@media (hover:hover){.day:hover .day__ar{transform:translateX(6px)}}
+.day:active .day__go{transform:translateY(1px)}
+.day:focus-visible{outline:3px solid var(--on-dark);outline-offset:4px}
+@media (min-width:900px){
+  .outline{grid-template-columns:repeat(2,minmax(0,max-content))}
+  .day{grid-template-columns:minmax(0,1fr) minmax(18rem,26rem)}
+  .day__go{min-height:0;padding-block:clamp(20px,3vw,40px)}
+}
+
+/* ========== 7. フッター ========== */
+.foot{padding:28px var(--margin) 32px;background:var(--night);color:var(--on-dark-muted)}
+.foot p{max-width:44rem;font-size:var(--t-note);line-height:1.8}
+.foot p+p{margin-top:6px}
+
+/* ========== 動き（静止状態が完成してから）：移動16〜24px＋不透明度だけ ========== */
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .7s var(--ease);transition-delay:calc(var(--i,0) * 75ms)}
+  .js .rv.is-in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- 1. ファーストビュー -->
+<header class="fv" id="top">
+  <picture class="fv__pic">
+    <source media="(min-width:600px)" srcset="assets/n/fv.webp">
+    <img src="assets/n/fv-m.webp" width="940" height="1365" alt="スライドの前で、参加者に向かって話す西田英司" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="fv__copy">
+    <p class="fv__label">ニシダメソッド ワンデイセミナー｜2027年1月開催</p>
+    <h1 class="fv__title"><span class="l">悩みを繰り返す前に、</span><span class="l">気づく場所へ</span></h1>
+    <p class="fv__lead">講義で知り、仲間と体験し、自分で気づく。ニシダメソッドの入り口となる、半日の無料セミナーです。</p>
+    <p class="fv__dates">1月26日（火）・30日（土）</p>
+    <ul class="fv__facts">
+      <li>13:00〜16:30</li>
+      <li>エッサム神田</li>
+      <li>Zoom同時配信あり</li>
+      <li>参加費無料</li>
+    </ul>
+    <a class="btn fv__cta" href="#apply"><span>日程を選んで無料で申し込む</span><span class="btn__ar" aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+  <!-- 2. こんな方に来てほしい -->
+  <section class="fit" aria-labelledby="fit-h">
+    <div class="wrap g">
+      <h2 class="fit__h rv" id="fit-h">こんな方に来てほしい</h2>
+      <ul class="fit__list">
+        <li class="rv" style="--i:1">頑張っているのに、なぜか<em>報われない</em></li>
+        <li class="rv" style="--i:2">外では強がっていて、<em>本音</em>を言える相手がいない</li>
+        <li class="rv" style="--i:3">人間関係やお金の悩みを、何度も<em>繰り返している</em></li>
+        <li class="rv" style="--i:4">自分が本当は何をしたいのか、<em>分からない</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. 半日で体験すること -->
+  <!-- TODO: 実際の当日プログラムが別にある場合は、下の3項目を実内容へ置換（事実を推測して増やさない） -->
+  <section class="flow" aria-labelledby="flow-h">
+    <div class="wrap">
+      <h2 class="h2 rv" id="flow-h">半日で体験すること</h2>
+      <p class="flow__lead rv" style="--i:1">答えを一方的に教わるだけの時間ではありません。知る、体験する、気づくという順番を、仲間と一緒にたどります。</p>
+      <div class="flow__rows">
+        <div class="step rv"><h3>講義で知る</h3><p>これまで無意識に繰り返してきた考え方や選択を、まず言葉として知ります。</p></div>
+        <div class="step rv"><h3>仲間と体験する</h3><p>ひとりで考え込むのではなく、その場にいる仲間と対話しながら、自分の反応を確かめます。</p></div>
+        <div class="step rv"><h3>自分で気づく</h3><p>誰かから正解を与えられるのではなく、自分を観察し、これから何を選ぶかを自分で決めます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 参加者の声 -->
+  <section class="voices" aria-labelledby="voices-h">
+    <div class="wrap">
+      <h2 class="h2 rv" id="voices-h"><span class="l nb">参加した方が、</span><span class="l nb">自分の言葉で話してくれました</span></h2>
+      <p class="voices__lead rv" style="--i:1">参加前に感じていたこと、実際に起きた変化、これから参加する方へ伝えたいことを伺いました。</p>
+
+      <article class="vo vo--main">
+        <div class="vid rv">
+          <a class="vid__link" href="https://youtu.be/I5kEzpbZqgM" data-yt="I5kEzpbZqgM" data-title="じゅんこさんのインタビュー動画：悩みはないと思っていた私が、本音で生きられるようになるまで" target="_blank" rel="noopener">
+            <img src="assets/vid-junko.webp" width="1280" height="720" alt="じゅんこさんのインタビュー動画のサムネイル" style="object-position:50% 40%" loading="lazy" decoding="async">
+            <span class="vid__play" aria-hidden="true"></span>
+            <span class="sr">YouTubeで動画を再生する（2分15秒）</span>
+          </a>
+          <span class="vid__dur">2:15</span>
+        </div>
+        <div class="vo__t rv">
+          <div class="vo__h">
+            <p class="vo__name">じゅんこさん</p>
+            <h3>悩みはないと思っていた私が、本音で生きられるようになるまで</h3>
+          </div>
+          <div class="vo__b">
+            <p><b>参加前は</b>　自分では悩みもなく、人生はうまくいっていると思っていました。しかし振り返ると、人によく見られようとして、外側を固めて生きていました。</p>
+            <p><b>参加して</b>　自分を客観的に観察するなかで、少しずつ肩の力が抜け、本当の自分や本音に近づけるようになりました。人に合わせるのではなく、自分が送りたい毎日のために何を選ぶかを楽しんでいます。</p>
+            <p><b>おすすめしたいのは</b>　話を聞いて終わる講座ではなく、仲間と実践しながら、自分自身を観察して気づき、これからの選択を自分で決めていきたい人です。</p>
+          </div>
+          <a class="vo__ext" href="https://youtu.be/I5kEzpbZqgM" target="_blank" rel="noopener">YouTubeで見る（2分15秒）</a>
+        </div>
+      </article>
+
+      <article class="vo vo--a">
+        <div class="vid rv">
+          <a class="vid__link" href="https://youtu.be/M5M0D641Mn4" data-yt="M5M0D641Mn4" data-title="あいこさんのインタビュー動画：離れられなかった環境から、やりたいことへ踏み出せるように" target="_blank" rel="noopener">
+            <img src="assets/vid-aiko.webp" width="1280" height="720" alt="あいこさんのインタビュー動画のサムネイル" style="object-position:50% 30%" loading="lazy" decoding="async">
+            <span class="vid__play" aria-hidden="true"></span>
+            <span class="sr">YouTubeで動画を再生する（1分16秒）</span>
+          </a>
+          <span class="vid__dur">1:16</span>
+        </div>
+        <div class="vo__t rv">
+          <div class="vo__h">
+            <p class="vo__name">あいこさん</p>
+            <h3>離れられなかった環境から、やりたいことへ踏み出せるように</h3>
+          </div>
+          <div class="vo__b">
+            <p><b>参加前は</b>　条件のよい会社で働きながら、ほかにやってみたいことがあっても、今の環境を離れる勇気を持てずにいました。</p>
+            <p><b>参加して</b>　会社を辞め、以前は毎日飲んでいたお酒もやめて、禁酒を1年間続けています。自分のなかにある不安と向き合いながら、短期の仕事など、やってみたいことに少しずつ挑戦できるようになりました。</p>
+            <p><b>おすすめしたいのは</b>　今の生活に違和感があり、「何かを変えたい」と思いながらも、きっかけをつかめずにいる人です。</p>
+          </div>
+          <a class="vo__ext" href="https://youtu.be/M5M0D641Mn4" target="_blank" rel="noopener">YouTubeで見る（1分16秒）</a>
+        </div>
+      </article>
+
+      <article class="vo vo--b">
+        <div class="vid rv">
+          <a class="vid__link" href="https://youtu.be/EEKgyNUHFY4" data-yt="EEKgyNUHFY4" data-title="みちかさんのインタビュー動画：支払いに追われる毎日から、仲間と楽しめる日々へ" target="_blank" rel="noopener">
+            <img src="assets/vid-michika.webp" width="1280" height="720" alt="みちかさんのインタビュー動画のサムネイル" style="object-position:50% 25%" loading="lazy" decoding="async">
+            <span class="vid__play" aria-hidden="true"></span>
+            <span class="sr">YouTubeで動画を再生する（1分10秒）</span>
+          </a>
+          <span class="vid__dur">1:10</span>
+        </div>
+        <div class="vo__t rv">
+          <div class="vo__h">
+            <p class="vo__name">みちかさん</p>
+            <h3>支払いに追われる毎日から、仲間と楽しめる日々へ</h3>
+          </div>
+          <div class="vo__b">
+            <p><b>参加前は</b>　大きな借金を抱え、毎月の支払いに追われる日々を過ごしていました。</p>
+            <p><b>参加して</b>　できることを自分のペースで続けた結果、本人の体験として借金がゼロになり、支払いに追われる生活から離れられました。今では仲間とゴルフを楽しむ余裕も生まれています。</p>
+            <p><b>おすすめしたいのは</b>　人生を変えたい、今の状況から抜け出したいと思いながらも、なかなかうまくいかず、最初の一歩を踏み出せずにいる人です。</p>
+          </div>
+          <a class="vo__ext" href="https://youtu.be/EEKgyNUHFY4" target="_blank" rel="noopener">YouTubeで見る（1分10秒）</a>
+        </div>
+      </article>
+
+      <p class="voices__note rv">掲載している内容は参加者個人の体験・感想であり、同様の変化や結果を保証するものではありません。</p>
+      <!-- 手紙の引用: noteの実URLが未提供のため非表示。URL確定後にここへ引用と実リンクを置く -->
+    </div>
+  </section>
+
+  <!-- 5. 講師紹介（写真は西田さん本人の公開許諾を公開前に要確認） -->
+  <section class="teacher" aria-labelledby="teacher-h">
+    <figure class="teacher__fig rv">
+      <img src="assets/n/teacher-m.webp" srcset="assets/n/teacher-m.webp 1100w, assets/n/teacher.webp 2048w" sizes="(min-width:900px) 58vw, 100vw" width="2048" height="1365" alt="帽子をかぶり、笑顔で話す西田英司" loading="lazy" decoding="async">
+    </figure>
+    <div class="teacher__text">
+      <h2 id="teacher-h" class="rv">講師 西田英司</h2>
+      <p class="teacher__role rv" style="--i:1">企業再生家・経営者</p>
+      <ul class="career">
+        <li class="rv" style="--i:2">米イリノイ大学で経営科学修士号を取得</li>
+        <li class="rv" style="--i:3"><span class="nb">28歳で酒造免許を取得し、</span><span class="nb">酒類メーカーを起業</span></li>
+        <li class="rv" style="--i:4"><span class="nb">2024年までの24年間、</span><span class="nb">14業種の事業再生に</span><span class="nb">代表取締役・取締役として携わる</span></li>
+        <li class="rv" style="--i:5">現在はニシダメソッドを主宰</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. 開催概要・日程選択・申込み -->
+  <section class="apply" id="apply" aria-labelledby="apply-h">
+    <div class="wrap">
+      <h2 class="h2 rv" id="apply-h">参加する日を選ぶ</h2>
+      <dl class="outline rv" style="--i:1">
+        <div><dt>日程</dt><dd>2027年1月26日（火）／1月30日（土）</dd></div>
+        <div><dt>時間</dt><dd>13:00〜16:30</dd></div>
+        <div><dt>会場</dt><dd>エッサム神田</dd></div>
+        <div><dt>配信</dt><dd>Zoom同時配信あり</dd></div>
+        <div><dt>参加費</dt><dd>無料</dd></div>
+      </dl>
+      <div class="days">
+        <a class="day rv" href="https://nishimeso.com/l/c/yo6dAQ51/p0lr4Hdi">
+          <span class="day__main"><span class="day__d">1月26日（火）</span><span class="day__t">13:00〜16:30</span></span>
+          <span class="day__go"><span>1月26日（火）に無料で申し込む</span><span class="day__ar" aria-hidden="true">→</span></span>
+        </a>
+        <a class="day rv" href="https://nishimeso.com/l/c/FuAnyUGb/p0lr4Hdi" style="--i:1">
+          <span class="day__main"><span class="day__d">1月30日（土）</span><span class="day__t">13:00〜16:30</span></span>
+          <span class="day__go"><span>1月30日（土）に無料で申し込む</span><span class="day__ar" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2027 ニシダメソッド</p>
+  <p>掲載している内容は参加者個人の体験・感想であり、同様の変化や結果を保証するものではありません。</p>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('is-in')})}
+  else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-in');io.unobserve(en.target)}});
+    },{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  }
+  /* 動画: クリックしたときだけ youtube-nocookie のiframeへ差し替え。JSなしなら通常リンクでYouTubeへ */
+  document.querySelectorAll('.vid__link').forEach(function(a){
+    a.addEventListener('click',function(ev){
+      ev.preventDefault();
+      var box=a.parentNode,f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/'+a.dataset.yt+'?autoplay=1&rel=0';
+      f.title=a.dataset.title;
+      f.allow='autoplay; encrypted-media; picture-in-picture';
+      f.allowFullscreen=true;
+      var d=box.querySelector('.vid__dur');if(d)d.hidden=true;
+      box.replaceChild(f,a);
+    });
+  });
+})();
+</script>
+</body>
+</html>
